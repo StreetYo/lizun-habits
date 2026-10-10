@@ -1,0 +1,56 @@
+{
+  "id": "lizun.habits",
+  "name": "Habits",
+  "version": "1.0.0",
+  "author": "Lizun",
+  "description": "Daily habits with a check for today, streaks and the last seven days",
+  "entry": "index.html",
+  "width": 300,
+  "permissions": ["storage", "activity"],
+  "settings": [
+    {
+      "key": "dayStartHour",
+      "type": "number",
+      "label": "Day starts at",
+      "description": "Checks before this hour still count for the day before, for late nights.",
+      "default": 0,
+      "min": 0,
+      "max": 6,
+      "unit": ":00"
+    },
+    {
+      "key": "showInIsland",
+      "type": "toggle",
+      "label": "Show habits in the closed island",
+      "description": "The next habit left for today and how many are done.",
+      "default": true
+    },
+    {
+      "key": "hideWhenDone",
+      "type": "toggle",
+      "label": "Hide from the closed island when all are done",
+      "description": "Otherwise it shows a check and the best current streak.",
+      "default": true
+    }
+  ],
+  "locales": {
+    "ru": {
+      "name": "Привычки",
+      "description": "Ежедневные привычки: отметка за сегодня, серии и последние семь дней",
+      "settings": {
+        "dayStartHour": {
+          "label": "День начинается в",
+          "description": "Отметки до этого часа засчитываются за предыдущий день, если ложитесь поздно."
+        },
+        "showInIsland": {
+          "label": "Показывать привычки в закрытом острове",
+          "description": "Следующая привычка на сегодня и сколько уже сделано."
+        },
+        "hideWhenDone": {
+          "label": "Скрывать из закрытого острова, когда всё сделано",
+          "description": "Иначе там видны галочка и лучшая текущая серия."
+        }
+      }
+    }
+  }
+}
